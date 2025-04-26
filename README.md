@@ -6,9 +6,9 @@ The aim of this project is to discover skeleton animation through an existing ar
 
 ### Informations
 
-    1. The animations are sampled at **30 fps**.
-    2. The lib used for the project **Whitebox** is unstable. *Sometimes the mesh   can disapear try to reload the project*.
-    3. The project can only compile on **x86**. *Whitebox is not compatible **x64** *.
+    1. The animations are sampled at 30 fps.
+    2. The lib used for the project Whitebox is unstable. Sometimes the mesh   can disapear try to reload the project.
+    3. The project can only compile on x86. Whitebox is not compatible x64.
     4. Walk animation is not completly fluid. It is missing one frame which causes jolts.
     5. Project model and animation are from Unreal Engine 4 so the scale is 1 equal to 1 cm.
 
@@ -56,24 +56,30 @@ The idea would be to interpolate the QT (Quat/Translation) structure because, as
 # Using
 
 In `void MySimulation::update(float frameTime)` you can uncoment to see each step one by one.
-`///*Process steps*/`
-`step1(frameTime);`
-`//step2(frameTime);`
-`//step3(frameTime);`
-`//step4(frameTime);`
+
+```CPP
+///*Process steps*/
+step1(frameTime);
+//step2(frameTime);
+//step3(frameTime);
+//step4(frameTime);
+```
 
 You can change the speed of the animation in the same function by uncomenting and change `10.f` by another float.
-`///*Limit the frame time*/`
-`//if (frameTime > 0.1f)`
-`//{`
-`//	frameTime = 1.0f / 60.0f;`
-`//}`
-`//frameTime /= 10.0f;`
+
+```CPP
+///*Limit the frame time*/
+//if (frameTime > 0.1f)
+//{
+//	frameTime = 1.0f / 60.0f;
+//}
+//frameTime /= 10.0f;
+```
 
 ## Keyboard
 
 | Input | Description |
-| ----------- | ----------- |
+| :---: | :---: |
 | W | Move forward |
 | A | Move Left |
 | S | Move backward |
