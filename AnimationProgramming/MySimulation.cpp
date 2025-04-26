@@ -242,16 +242,16 @@ void				MySimulation::update(float frameTime)
 	//{
 	//	frameTime = 1.0f / 60.0f;
 	//}
-	////frameTime /= 10.0f;
+	//frameTime /= 10.0f;
 
 	///*Draw world axis*/
 	//drawWorldMarker();
 
 	///*Process steps*/
-	////step1(frameTime);
-	////step2(frameTime);
-	////step3(frameTime);
-	step4(frameTime);
+	step1(frameTime);
+	//step2(frameTime);
+	//step3(frameTime);
+	//step4(frameTime);
 }
 
 /// Draw axis of the world
